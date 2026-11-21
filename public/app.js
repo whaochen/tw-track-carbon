@@ -858,6 +858,11 @@
       state.factors = await facRes.json();
       state.network.systems.forEach((s) => state.systemsById.set(s.system_id, s));
 
+      const totalStations = state.network.systems.reduce((sum, s) => sum + s.stations.length, 0);
+      $("#stat-systems").textContent = `${state.network.systems.length} 大系統`;
+      $("#stat-stations").textContent = `${totalStations} 站`;
+      $("#stat-updated").textContent = (state.network.updated_at || "2026-11").replace("-", "/");
+
       selectSystem("THSR");
       renderFactorsTable();
       renderMultiSegments();

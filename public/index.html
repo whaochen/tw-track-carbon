@@ -12,23 +12,37 @@
   <header class="topbar">
     <div class="container topbar-inner">
       <div class="brand-area">
-        <div class="brand-logo" aria-hidden="true">
-          <svg viewBox="0 0 36 36" width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="36" height="36" rx="9" fill="#0F172A"/>
-            <path d="M9 26L14 10H22L27 26" stroke="#38BDF8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M11.5 21H24.5" stroke="#E2E8F0" stroke-width="2" stroke-linecap="round"/>
-            <path d="M13 16H23" stroke="#E2E8F0" stroke-width="2" stroke-linecap="round"/>
-            <circle cx="18" cy="11" r="2.2" fill="#22C55E"/>
-          </svg>
+        <div class="element-tile" aria-hidden="true">
+          <span class="el-num">26</span>
+          <span class="el-sym">Fe</span>
+          <span class="el-name">Iron</span>
         </div>
         <div class="brand-text">
           <h1>台灣軌道運輸碳足跡計算箱</h1>
-          <p>Taiwan Track Carbon｜範疇三差旅與 MRV 查證工具</p>
+          <p>晧脈元素庫・Taiwan Track Carbon｜高鐵・台鐵・捷運・輕軌 MRV 精算</p>
         </div>
       </div>
 
-      <div class="topbar-badge">
-        <hao-element-badge symbol="Fe" theme="light"></hao-element-badge>
+      <div class="banner-stats" aria-label="資料統計摘要">
+        <div class="stat-chip">
+          <span class="stat-label">支援軌道系統</span>
+          <strong class="stat-val" id="stat-systems">9 大系統</strong>
+        </div>
+        <div class="stat-chip">
+          <span class="stat-label">收錄車站總數</span>
+          <strong class="stat-val" id="stat-stations">510 站</strong>
+        </div>
+        <div class="stat-chip">
+          <span class="stat-label">資料版本</span>
+          <strong class="stat-val" id="stat-updated">2026/11</strong>
+        </div>
+      </div>
+
+      <div class="banner-actions">
+        <a class="banner-btn" href="https://hao-element-matrix.pages.dev/" target="_blank" rel="noopener">✦ 返回晧脈元素庫 ↗</a>
+        <div class="topbar-badge">
+          <hao-element-badge symbol="Fe" theme="dark"></hao-element-badge>
+        </div>
       </div>
     </div>
   </header>
