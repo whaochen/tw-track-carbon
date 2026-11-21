@@ -1,0 +1,503 @@
+{
+  "TMRT": {
+    "name_zh": "台中捷運",
+    "line_name": "綠線（烏日文心北屯線）",
+    "official_length_km": 16.71,
+    "source_url": "https://zh.wikipedia.org/zh-tw/%E8%87%BA%E4%B8%AD%E6%8D%B7%E9%81%8B%E8%BB%8A%E7%AB%99%E5%88%97%E8%A1%A8",
+    "loop": false,
+    "branches": [
+      {
+        "branch_id": "G",
+        "stations": [
+          {
+            "code": "103a",
+            "name_zh": "北屯總站",
+            "cumulative_km": 0.0
+          },
+          {
+            "code": "103",
+            "name_zh": "舊社",
+            "cumulative_km": 1.01
+          },
+          {
+            "code": "104",
+            "name_zh": "松竹",
+            "cumulative_km": 1.69
+          },
+          {
+            "code": "105",
+            "name_zh": "四維國小",
+            "cumulative_km": 3.34
+          },
+          {
+            "code": "106",
+            "name_zh": "文心崇德",
+            "cumulative_km": 4.2
+          },
+          {
+            "code": "107",
+            "name_zh": "文心中清",
+            "cumulative_km": 5.67
+          },
+          {
+            "code": "108",
+            "name_zh": "文華高中",
+            "cumulative_km": 6.73
+          },
+          {
+            "code": "109",
+            "name_zh": "文心櫻花",
+            "cumulative_km": 7.55
+          },
+          {
+            "code": "110",
+            "name_zh": "市政府",
+            "cumulative_km": 8.35
+          },
+          {
+            "code": "111",
+            "name_zh": "水安宮",
+            "cumulative_km": 9.37
+          },
+          {
+            "code": "112",
+            "name_zh": "文心森林公園",
+            "cumulative_km": 10.23
+          },
+          {
+            "code": "113",
+            "name_zh": "南屯",
+            "cumulative_km": 10.77
+          },
+          {
+            "code": "114",
+            "name_zh": "豐樂公園",
+            "cumulative_km": 11.65
+          },
+          {
+            "code": "115",
+            "name_zh": "大慶",
+            "cumulative_km": 13.25
+          },
+          {
+            "code": "116",
+            "name_zh": "九張犁",
+            "cumulative_km": 14.17
+          },
+          {
+            "code": "117",
+            "name_zh": "九德",
+            "cumulative_km": 14.86
+          },
+          {
+            "code": "118",
+            "name_zh": "烏日",
+            "cumulative_km": 15.89
+          },
+          {
+            "code": "119",
+            "name_zh": "高鐵台中站",
+            "cumulative_km": 16.71
+          }
+        ]
+      }
+    ]
+  },
+  "NTDLRT": {
+    "name_zh": "淡海輕軌",
+    "line_name": "綠山線＋藍海線第一期",
+    "official_length_km": 9.55,
+    "source_url": "https://zh.wikipedia.org/zh-tw/%E6%B7%A1%E6%B5%B7%E8%BC%95%E8%BB%8C",
+    "loop": false,
+    "branches": [
+      {
+        "branch_id": "V_GREEN",
+        "stations": [
+          {
+            "code": "V01",
+            "name_zh": "紅樹林",
+            "cumulative_km": 0.0
+          },
+          {
+            "code": "V02",
+            "name_zh": "竿蓁林",
+            "cumulative_km": 0.84
+          },
+          {
+            "code": "V03",
+            "name_zh": "淡金鄧公",
+            "cumulative_km": 1.785
+          },
+          {
+            "code": "V04",
+            "name_zh": "淡江大學",
+            "cumulative_km": 2.745
+          },
+          {
+            "code": "V05",
+            "name_zh": "淡金北新",
+            "cumulative_km": 3.345
+          },
+          {
+            "code": "V06",
+            "name_zh": "新市一路",
+            "cumulative_km": 3.85
+          },
+          {
+            "code": "V07",
+            "name_zh": "淡水行政中心",
+            "cumulative_km": 4.555
+          },
+          {
+            "code": "V08",
+            "name_zh": "濱海義山",
+            "cumulative_km": 5.425
+          },
+          {
+            "code": "V09",
+            "name_zh": "濱海沙崙",
+            "cumulative_km": 5.985
+          },
+          {
+            "code": "V10",
+            "name_zh": "淡海新市鎮",
+            "cumulative_km": 6.78
+          },
+          {
+            "code": "V11",
+            "name_zh": "崁頂",
+            "cumulative_km": 7.28
+          }
+        ]
+      },
+      {
+        "branch_id": "V_BLUE",
+        "stations": [
+          {
+            "code": "V09",
+            "name_zh": "濱海沙崙",
+            "cumulative_km": 0.0
+          },
+          {
+            "code": "V28",
+            "name_zh": "台北海洋大學",
+            "cumulative_km": 0.53
+          },
+          {
+            "code": "V27",
+            "name_zh": "沙崙",
+            "cumulative_km": 1.655
+          },
+          {
+            "code": "V26",
+            "name_zh": "淡水漁人碼頭",
+            "cumulative_km": 2.21
+          }
+        ]
+      }
+    ]
+  },
+  "NTALRT": {
+    "name_zh": "安坑輕軌",
+    "line_name": "安坑線",
+    "official_length_km": 7.5,
+    "source_url": "https://zh.wikipedia.org/zh-tw/%E5%AE%89%E5%9D%91%E8%BC%95%E8%BB%8C",
+    "loop": false,
+    "branches": [
+      {
+        "branch_id": "K",
+        "stations": [
+          {
+            "code": "K01",
+            "name_zh": "雙城",
+            "cumulative_km": 0.0
+          },
+          {
+            "code": "K02",
+            "name_zh": "玫瑰中國城",
+            "cumulative_km": 0.622
+          },
+          {
+            "code": "K03",
+            "name_zh": "台北小城",
+            "cumulative_km": 1.291
+          },
+          {
+            "code": "K04",
+            "name_zh": "耕莘安康院區",
+            "cumulative_km": 1.903
+          },
+          {
+            "code": "K05",
+            "name_zh": "景文科大",
+            "cumulative_km": 2.648
+          },
+          {
+            "code": "K06",
+            "name_zh": "安康",
+            "cumulative_km": 3.719
+          },
+          {
+            "code": "K07",
+            "name_zh": "陽光運動公園",
+            "cumulative_km": 4.533
+          },
+          {
+            "code": "K08",
+            "name_zh": "新和國小",
+            "cumulative_km": 5.791
+          },
+          {
+            "code": "K09",
+            "name_zh": "十四張",
+            "cumulative_km": 7.5
+          }
+        ]
+      }
+    ]
+  },
+  "KLRT": {
+    "name_zh": "高雄環狀輕軌",
+    "line_name": "高雄環狀輕軌",
+    "official_length_km": 22.1,
+    "source_url": "https://zh.wikipedia.org/zh-tw/%E9%AB%98%E9%9B%84%E7%92%B0%E7%8B%80%E8%BC%95%E8%BB%8C",
+    "loop": true,
+    "loop_total_km": 22.1,
+    "close_segment_km": 0.481,
+    "branches": [
+      {
+        "branch_id": "C",
+        "stations": [
+          {
+            "code": "C1",
+            "name_zh": "籬仔內",
+            "segment_km": 0.0,
+            "cumulative_km": 0.0
+          },
+          {
+            "code": "C2",
+            "name_zh": "凱旋瑞田",
+            "segment_km": 0.782,
+            "cumulative_km": 0.782
+          },
+          {
+            "code": "C3",
+            "name_zh": "前鎮之星",
+            "segment_km": 0.672,
+            "cumulative_km": 1.454
+          },
+          {
+            "code": "C4",
+            "name_zh": "凱旋中華",
+            "segment_km": 0.568,
+            "cumulative_km": 2.022
+          },
+          {
+            "code": "C5",
+            "name_zh": "夢時代",
+            "segment_km": 0.627,
+            "cumulative_km": 2.649
+          },
+          {
+            "code": "C6",
+            "name_zh": "經貿園區",
+            "segment_km": 0.73,
+            "cumulative_km": 3.379
+          },
+          {
+            "code": "C7",
+            "name_zh": "軟體園區",
+            "segment_km": 0.593,
+            "cumulative_km": 3.972
+          },
+          {
+            "code": "C8",
+            "name_zh": "高雄展覽館",
+            "segment_km": 0.597,
+            "cumulative_km": 4.569
+          },
+          {
+            "code": "C9",
+            "name_zh": "旅運中心",
+            "segment_km": 0.533,
+            "cumulative_km": 5.102
+          },
+          {
+            "code": "C10",
+            "name_zh": "光榮碼頭",
+            "segment_km": 0.59,
+            "cumulative_km": 5.692
+          },
+          {
+            "code": "C11",
+            "name_zh": "真愛碼頭",
+            "segment_km": 0.502,
+            "cumulative_km": 6.194
+          },
+          {
+            "code": "C12",
+            "name_zh": "駁二大義",
+            "segment_km": 0.568,
+            "cumulative_km": 6.762
+          },
+          {
+            "code": "C13",
+            "name_zh": "駁二蓬萊",
+            "segment_km": 0.516,
+            "cumulative_km": 7.278
+          },
+          {
+            "code": "C14",
+            "name_zh": "哈瑪星",
+            "segment_km": 0.46,
+            "cumulative_km": 7.738
+          },
+          {
+            "code": "C15",
+            "name_zh": "壽山公園",
+            "segment_km": 0.65,
+            "cumulative_km": 8.388
+          },
+          {
+            "code": "C16",
+            "name_zh": "文武聖殿",
+            "segment_km": 0.416,
+            "cumulative_km": 8.804
+          },
+          {
+            "code": "C17",
+            "name_zh": "鼓山區公所",
+            "segment_km": 0.783,
+            "cumulative_km": 9.587
+          },
+          {
+            "code": "C18",
+            "name_zh": "鼓山",
+            "segment_km": 0.719,
+            "cumulative_km": 10.306
+          },
+          {
+            "code": "C19",
+            "name_zh": "馬卡道",
+            "segment_km": 0.586,
+            "cumulative_km": 10.892
+          },
+          {
+            "code": "C20",
+            "name_zh": "臺鐵美術館",
+            "segment_km": 0.593,
+            "cumulative_km": 11.485
+          },
+          {
+            "code": "C21A",
+            "name_zh": "內惟藝術中心",
+            "segment_km": 0.353,
+            "cumulative_km": 11.838
+          },
+          {
+            "code": "C21",
+            "name_zh": "美術館",
+            "segment_km": 0.475,
+            "cumulative_km": 12.313
+          },
+          {
+            "code": "C22",
+            "name_zh": "聯合醫院",
+            "segment_km": 0.413,
+            "cumulative_km": 12.726
+          },
+          {
+            "code": "C23",
+            "name_zh": "龍華國小",
+            "segment_km": 0.432,
+            "cumulative_km": 13.158
+          },
+          {
+            "code": "C24",
+            "name_zh": "愛河之心",
+            "segment_km": 0.902,
+            "cumulative_km": 14.06
+          },
+          {
+            "code": "C25",
+            "name_zh": "新上國小",
+            "segment_km": 0.601,
+            "cumulative_km": 14.661
+          },
+          {
+            "code": "C26",
+            "name_zh": "大順民族",
+            "segment_km": 0.726,
+            "cumulative_km": 15.387
+          },
+          {
+            "code": "C27",
+            "name_zh": "灣仔內",
+            "segment_km": 0.436,
+            "cumulative_km": 15.823
+          },
+          {
+            "code": "C28",
+            "name_zh": "高雄高工",
+            "segment_km": 0.717,
+            "cumulative_km": 16.54
+          },
+          {
+            "code": "C29",
+            "name_zh": "樹德家商",
+            "segment_km": 0.736,
+            "cumulative_km": 17.276
+          },
+          {
+            "code": "C30",
+            "name_zh": "科工館",
+            "segment_km": 0.809,
+            "cumulative_km": 18.085
+          },
+          {
+            "code": "C31",
+            "name_zh": "聖功醫院",
+            "segment_km": 0.509,
+            "cumulative_km": 18.594
+          },
+          {
+            "code": "C32",
+            "name_zh": "凱旋公園",
+            "segment_km": 0.496,
+            "cumulative_km": 19.09
+          },
+          {
+            "code": "C33",
+            "name_zh": "衛生局",
+            "segment_km": 0.503,
+            "cumulative_km": 19.593
+          },
+          {
+            "code": "C34",
+            "name_zh": "五權國小",
+            "segment_km": 0.496,
+            "cumulative_km": 20.089
+          },
+          {
+            "code": "C35",
+            "name_zh": "凱旋武昌",
+            "segment_km": 0.53,
+            "cumulative_km": 20.619
+          },
+          {
+            "code": "C36",
+            "name_zh": "凱旋二聖",
+            "segment_km": 0.513,
+            "cumulative_km": 21.132
+          },
+          {
+            "code": "C37",
+            "name_zh": "輕軌機廠",
+            "segment_km": 0.486,
+            "cumulative_km": 21.618
+          }
+        ]
+      }
+    ]
+  }
+}

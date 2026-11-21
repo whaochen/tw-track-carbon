@@ -1,0 +1,113 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-11",
+  "tiers": {
+    "Tier 1": {
+      "badge_class": "tier-1",
+      "label": "Tier 1 官方碳標籤",
+      "description": "經環境部核定或營運機構依 ISO 14067 盤查公告之專屬旅客運輸服務碳足跡數值。"
+    },
+    "Tier 2": {
+      "badge_class": "tier-2",
+      "label": "Tier 2 環境部通用",
+      "description": "引用環境部產品碳足跡資訊網 (CFP_P_02) 之通用軌道大眾運輸排放係數。"
+    },
+    "Tier 3": {
+      "badge_class": "tier-3",
+      "label": "Tier 3 近似替代",
+      "description": "當運具尚無專屬碳標籤時，採同級捷運或使用者自訂係數進行估算。"
+    }
+  },
+  "generic_metro_default_kg_per_pkm": 0.040,
+  "generic_metro_reference": {
+    "tier": "Tier 2",
+    "tier_label": "環境部通用",
+    "value_kg_per_pkm": 0.040,
+    "announcement_year": "環境部 CFP_P_02 通用捷運係數",
+    "boundary_note": "尚無專屬碳標籤之捷運與輕軌系統，預設採環境部通用捷運係數 0.040 kgCO2e/pkm；顧問亦可於前端切換為北捷 0.075 或自訂盤查數值。",
+    "url": "https://data.moenv.gov.tw/dataset/detail/CFP_P_02"
+  },
+  "systems": {
+    "THSR": {
+      "tier": "Tier 1",
+      "tier_label": "官方碳足跡對照表",
+      "value_kg_per_pkm": 0.029,
+      "announcement_year": "2025-2026 官方公告",
+      "boundary_note": "高鐵採官方公告之起迄站碳足跡對照表直查，每人每公里參考值為 29 gCO2e/pkm。",
+      "url": "https://www.thsrc.com.tw/ArticleContent/5a1f4c72-b564-4706-bcdd-efbda93c3d93"
+    },
+    "TRA": {
+      "tier": "Tier 1",
+      "tier_label": "官方車種碳足跡",
+      "value_kg_per_pkm": 0.036,
+      "train_types": {
+        "tze_chiang": { "label": "自強號（含普悠瑪 / 太魯閣 / EMU3000）", "value_kg_per_pkm": 0.036 },
+        "chu_kuang": { "label": "莒光號", "value_kg_per_pkm": 0.050 },
+        "local": { "label": "區間車 / 區間快車", "value_kg_per_pkm": 0.055 }
+      },
+      "announcement_year": "臺鐵官方碳足跡公告",
+      "boundary_note": "依臺鐵不同車種動力與載客率區分：自強號 36g、莒光號 50g、區間／區間快車 55g CO2e/pkm。",
+      "url": "https://www.trc.com.tw/tra-tip-web/adr/AdrI190/AdrI190/view?grandParentTitle=13&parentTitle=14",
+      "secondary_url": "https://www.rti.org.tw/news?uid=3&pid=157157"
+    },
+    "TRTC": {
+      "tier": "Tier 1",
+      "tier_label": "官方碳足跡標籤",
+      "value_kg_per_pkm": 0.075,
+      "breakdown": { "vehicle_kg": 0.030, "station_kg": 0.045 },
+      "announcement_year": "2026 (113年盤查)",
+      "boundary_note": "已包含列車行駛階段 (30g) 與車站空調、照明等服務階段 (45g)，不可與未含車站服務之舊通用係數直接混比。",
+      "url": "https://www.metro.taipei/cp.aspx?n=5B7ACD566D2CB1DD",
+      "secondary_url": "https://www.easycard.com.tw/new?cls=2&id=1767166545"
+    },
+    "KRTC": {
+      "tier": "Tier 1",
+      "tier_label": "官方碳足跡標籤",
+      "value_kg_per_pkm": 0.220,
+      "announcement_year": "2026 年公告碳標籤值",
+      "boundary_note": "220g 依 2026 年碳標籤公告包含全車站營運分攤，數值較高係因盤查邊界完整且運量基數不同，並非系統誤算。",
+      "url": "https://cfp.moenv.gov.tw/Carbon/WebPage/visitors/FLProductinfoView.aspx?SerialNo=71433BCB57E5EFAB960C3268B75EDB2D",
+      "secondary_url": "https://event.esunbank.com.tw/credit/1121101esg_c/index.html"
+    },
+    "TYMC": {
+      "tier": "Tier 2",
+      "tier_label": "環境部通用",
+      "value_kg_per_pkm": 0.040,
+      "announcement_year": "環境部 CFP_P_02 通用捷運係數",
+      "boundary_note": "桃園機場捷運尚無專屬碳標籤，預設採環境部通用捷運係數 (0.040 kgCO2e/pkm)，前端開放顧問覆寫為北捷值或自訂值。",
+      "url": "https://data.moenv.gov.tw/dataset/detail/CFP_P_02"
+    },
+    "TMRT": {
+      "tier": "Tier 2",
+      "tier_label": "環境部通用",
+      "value_kg_per_pkm": 0.040,
+      "announcement_year": "環境部 CFP_P_02 通用捷運係數",
+      "boundary_note": "台中捷運尚無專屬碳標籤，預設採環境部通用捷運係數 (0.040 kgCO2e/pkm)，前端開放顧問覆寫。",
+      "url": "https://data.moenv.gov.tw/dataset/detail/CFP_P_02"
+    },
+    "KLRT": {
+      "tier": "Tier 2",
+      "tier_label": "環境部通用",
+      "value_kg_per_pkm": 0.040,
+      "announcement_year": "環境部 CFP_P_02 通用捷運係數",
+      "boundary_note": "高雄環狀輕軌尚無專屬碳標籤，預設採環境部通用捷運係數 (0.040 kgCO2e/pkm)，前端開放顧問覆寫。",
+      "url": "https://data.moenv.gov.tw/dataset/detail/CFP_P_02"
+    },
+    "NTDLRT": {
+      "tier": "Tier 2",
+      "tier_label": "環境部通用",
+      "value_kg_per_pkm": 0.040,
+      "announcement_year": "環境部 CFP_P_02 通用捷運係數",
+      "boundary_note": "淡海輕軌尚無專屬碳標籤，預設採環境部通用捷運係數 (0.040 kgCO2e/pkm)，前端開放顧問覆寫。",
+      "url": "https://data.moenv.gov.tw/dataset/detail/CFP_P_02"
+    },
+    "NTALRT": {
+      "tier": "Tier 2",
+      "tier_label": "環境部通用",
+      "value_kg_per_pkm": 0.040,
+      "announcement_year": "環境部 CFP_P_02 通用捷運係數",
+      "boundary_note": "安坑輕軌尚無專屬碳標籤，預設採環境部通用捷運係數 (0.040 kgCO2e/pkm)，前端開放顧問覆寫。",
+      "url": "https://data.moenv.gov.tw/dataset/detail/CFP_P_02"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+name: Verify and Build Static Data
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  verify-and-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build static rail network JSON
+        run: python scripts/build_data.py
+
+      - name: Verify project integrity
+        run: python scripts/verify_project.py

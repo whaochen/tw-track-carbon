@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>台灣軌道運輸碳足跡計算箱｜Taiwan Track Carbon</title>
+  <meta name="description" content="整合台灣高鐵、台鐵、北捷、桃捷、中捷、高捷與三大輕軌免費官方里程資料，依環境部與營運機構最新碳足跡標籤精算碳排，並附完整 MRV 查證引用。">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://hao-element-matrix.pages.dev/badge.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="brand-area">
+        <div class="brand-logo" aria-hidden="true">
+          <svg viewBox="0 0 36 36" width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="36" height="36" rx="9" fill="#0F172A"/>
+            <path d="M9 26L14 10H22L27 26" stroke="#38BDF8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M11.5 21H24.5" stroke="#E2E8F0" stroke-width="2" stroke-linecap="round"/>
+            <path d="M13 16H23" stroke="#E2E8F0" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="18" cy="11" r="2.2" fill="#22C55E"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <h1>台灣軌道運輸碳足跡計算箱</h1>
+          <p>Taiwan Track Carbon｜範疇三差旅與 MRV 查證工具</p>
+        </div>
+      </div>
+
+      <div class="topbar-badge">
+        <hao-element-badge symbol="Fe" theme="light"></hao-element-badge>
+      </div>
+    </div>
+  </header>
+
+  <nav class="tabs-bar" aria-label="主要功能分頁">
+    <div class="container tabs-inner" role="tablist">
+      <button class="tab-btn active" role="tab" aria-selected="true" data-tab="single">單趟精算</button>
+      <button class="tab-btn" role="tab" aria-selected="false" data-tab="multi">多段轉乘行程 <span id="multi-count-badge" class="pill-count">0</span></button>
+      <button class="tab-btn" role="tab" aria-selected="false" data-tab="csv">CSV 批次試算</button>
+      <button class="tab-btn" role="tab" aria-selected="false" data-tab="factors">係數與引用總表</button>
+    </div>
+  </nav>
+
+  <main class="container main-content">
+    <!-- Loading / Error Banner -->
+    <div id="app-status" class="status-banner" hidden></div>
+
+    <!-- TAB 1: 單趟精算 -->
+    <section id="tab-single" class="tab-panel active" role="tabpanel">
+      <div class="card">
+        <div class="card-header">
+          <h2>1. 選擇軌道系統</h2>
+          <span class="sub-hint">9 大系統免收費 API 純靜態精算</span>
+        </div>
+        <div id="system-pills" class="system-pills" role="radiogroup" aria-label="軌道系統"></div>
+
+        <div class="station-grid">
+          <div class="field-group">
+            <label for="origin-input">起站（支援站名／站碼模糊搜尋）</label>
+            <div class="combobox">
+              <input id="origin-input" type="text" autocomplete="off" placeholder="例：板橋、R16、A12..." aria-autocomplete="list">
+              <ul id="origin-list" class="dropdown-list" hidden></ul>
+            </div>
+          </div>
+
+          <div class="swap-wrap">
+            <button id="swap-btn" type="button" class="icon-btn" title="起迄站對調" aria-label="起迄站對調">⇄</button>
+          </div>
+
+          <div class="field-group">
+            <label for="dest-input">迄站（支援站名／站碼模糊搜尋）</label>
+            <div class="combobox">
+              <input id="dest-input" type="text" autocomplete="off" placeholder="例：左營、O5、淡水..." aria-autocomplete="list">
+              <ul id="dest-list" class="dropdown-list" hidden></ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="options-row">
+          <div id="tra-train-group" class="field-group" hidden>
+            <label for="tra-train-select">台鐵車種</label>
+            <select id="tra-train-select">
+              <option value="tze_chiang">自強號（含普悠瑪／太魯閣／EMU3000）— 0.036 kgCO2e/pkm</option>
+              <option value="chu_kuang">莒光號 — 0.050 kgCO2e/pkm</option>
+              <option value="local">區間車／區間快車 — 0.055 kgCO2e/pkm</option>
+            </select>
+          </div>
+
+          <div class="field-group">
+            <label>行程方向</label>
+            <div class="segmented" role="group" aria-label="單程或來回">
+              <button type="button" class="seg-btn active" data-rt="false">單程 (×1)</button>
+              <button type="button" class="seg-btn" data-rt="true">來回 (×2)</button>
+            </div>
+          </div>
+
+          <div class="field-group">
+            <label for="pax-input">乘客人數</label>
+            <input id="pax-input" type="number" min="1" max="999" value="1">
+          </div>
+
+          <div class="field-group action-end">
+            <button id="add-to-multi-btn" type="button" class="btn-secondary">＋ 加入多段行程</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 計算結果卡片 -->
+      <div id="single-result-card" class="card result-card">
+        <div class="result-hero">
+          <div class="result-metric">
+            <span class="metric-label">總碳排放量</span>
+            <div class="metric-value">
+              <span id="res-kg">0.00</span> <span class="unit">kgCO2e</span>
+            </div>
+            <div class="metric-sub" id="res-g">0 gCO2e</div>
+          </div>
+          <div class="result-metric">
+            <span class="metric-label">計算里程（總旅次）</span>
+            <div class="metric-value">
+              <span id="res-km">0.00</span> <span class="unit">km</span>
+            </div>
+            <div class="metric-sub" id="res-route-summary">請選擇起迄站</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MRV 佐證抽屜 -->
+      <div id="mrv-drawer" class="card mrv-drawer">
+        <div class="card-header">
+          <h2>引用說明（MRV 查證佐證抽屜）</h2>
+          <button id="copy-citation-btn" type="button" class="btn-primary btn-sm">複製報告書引用文字</button>
+        </div>
+
+        <!-- 1. 透明公式列 -->
+        <div class="mrv-block">
+          <div class="mrv-label">1. 透明公式列</div>
+          <div id="mrv-formula" class="formula-box">—</div>
+        </div>
+
+        <!-- 2. 雙重等級徽章 -->
+        <div class="mrv-block">
+          <div class="mrv-label">2. 雙重等級徽章</div>
+          <div id="mrv-badges" class="badge-row"></div>
+        </div>
+
+        <!-- 3. 雙來源直連卡 -->
+        <div class="mrv-block">
+          <div class="mrv-label">3. 雙來源直連卡</div>
+          <div class="source-grid">
+            <div class="source-card">
+              <div class="source-title">里程資料來源</div>
+              <div id="mrv-dist-source" class="source-body">—</div>
+            </div>
+            <div class="source-card">
+              <div class="source-title">排放係數來源</div>
+              <div id="mrv-factor-source" class="source-body">—</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. 盤查邊界警示條 + 進階係數覆寫 -->
+        <div id="mrv-boundary-box" class="boundary-alert" hidden>
+          <div id="mrv-boundary-text"></div>
+          <div id="mrv-override-controls" class="override-controls" hidden>
+            <label for="override-mode">進階係數覆寫（顧問專用）：</label>
+            <select id="override-mode">
+              <option value="generic">環境部通用捷運係數 (0.040 kgCO2e/pkm)</option>
+              <option value="trtc">比照台北捷運官方標籤 (0.075 kgCO2e/pkm)</option>
+              <option value="custom">使用者自訂係數</option>
+            </select>
+            <input id="override-custom-val" type="number" step="0.001" min="0.001" max="1" value="0.040" hidden aria-label="自訂係數數值">
+          </div>
+        </div>
+
+        <!-- 5. 報告書引用句預覽 -->
+        <div class="mrv-block">
+          <div class="mrv-label">5. 報告書引用文字預覽</div>
+          <blockquote id="mrv-citation-preview" class="citation-quote">—</blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 2: 多段轉乘行程 -->
+    <section id="tab-multi" class="tab-panel" hidden role="tabpanel">
+      <div class="card">
+        <div class="card-header">
+          <h2>多段轉乘行程組合</h2>
+          <div class="header-actions">
+            <button id="demo-thsr-btn" type="button" class="btn-secondary btn-sm">載入範例：台北→高雄出差</button>
+            <button id="demo-commute-btn" type="button" class="btn-secondary btn-sm">載入範例：雙北輕軌捷運通勤</button>
+            <button id="clear-multi-btn" type="button" class="btn-ghost btn-sm">清空行程</button>
+          </div>
+        </div>
+
+        <div class="multi-summary">
+          <div>
+            <span class="metric-label">全程總碳排</span>
+            <div class="metric-value"><span id="multi-total-kg">0.00</span> <span class="unit">kgCO2e</span></div>
+          </div>
+          <div>
+            <span class="metric-label">全程總里程</span>
+            <div class="metric-value"><span id="multi-total-km">0.00</span> <span class="unit">km</span></div>
+          </div>
+          <div class="multi-actions">
+            <button id="copy-multi-citation-btn" type="button" class="btn-primary btn-sm">複製全程引用文字</button>
+          </div>
+        </div>
+
+        <div class="stacked-bar-wrap">
+          <div id="multi-stacked-bar" class="stacked-bar" aria-label="各運具碳排佔比圖"></div>
+          <div id="multi-legend" class="stacked-legend"></div>
+        </div>
+
+        <div id="multi-segments-list" class="segments-list">
+          <p class="empty-hint">目前尚無行程段落，請由「單趟精算」加入或點擊上方示範案例。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 3: CSV 批次試算 -->
+    <section id="tab-csv" class="tab-panel" hidden role="tabpanel">
+      <div class="card">
+        <div class="card-header">
+          <h2>CSV 批次試算（企業範疇三差旅盤查）</h2>
+          <button id="download-template-btn" type="button" class="btn-secondary btn-sm">下載標準 CSV 範本</button>
+        </div>
+        <p class="sub-hint">欄位格式：<code>日期,運具代碼,起站,迄站,車種,是否來回,人數,備註</code>（運具代碼如 THSR、TRA、TRTC、TYMC、KRTC、TMRT、NTDLRT、NTALRT、KLRT）</p>
+
+        <div id="csv-dropzone" class="dropzone" tabindex="0">
+          <p>拖曳 CSV 檔案至此處，或點擊選取本機檔案</p>
+          <input id="csv-file-input" type="file" accept=".csv,text/csv" hidden>
+          <button id="csv-browse-btn" type="button" class="btn-primary btn-sm">選擇 CSV 檔案</button>
+        </div>
+
+        <div id="csv-summary-bar" class="csv-summary-bar" hidden>
+          <div id="csv-stats"></div>
+          <button id="export-mrv-csv-btn" type="button" class="btn-primary btn-sm">匯出 MRV 查證底稿 CSV</button>
+        </div>
+
+        <div class="table-scroll">
+          <table id="csv-result-table" class="data-table" hidden>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>日期</th>
+                <th>運具</th>
+                <th>起站 → 迄站</th>
+                <th>來回／人數</th>
+                <th>計算里程 (km)</th>
+                <th>係數 (kg/pkm)</th>
+                <th>總碳排 (kgCO2e)</th>
+                <th>狀態</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 4: 係數與引用總表 -->
+    <section id="tab-factors" class="tab-panel" hidden role="tabpanel">
+      <div class="card">
+        <div class="card-header">
+          <h2>九大軌道系統 MRV 係數與資料來源總表</h2>
+          <span class="sub-hint">所有資料皆由建置期靜態編譯自公開來源</span>
+        </div>
+        <div class="table-scroll">
+          <table id="factors-table" class="data-table">
+            <thead>
+              <tr>
+                <th>系統</th>
+                <th>計算模式</th>
+                <th>距離來源等級與出處</th>
+                <th>係數等級</th>
+                <th>排放係數 (kgCO2e/pkm)</th>
+                <th>盤查邊界與年份說明</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-info">
+        <strong>台灣軌道運輸碳足跡計算箱 (`tw-track-carbon`)</strong>
+        <span>純靜態開源計算工具・100% 免費官方開放資料・MRV 可查證</span>
+      </div>
+      <div class="footer-badge">
+        <hao-element-badge symbol="Fe" theme="light"></hao-element-badge>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <script src="app.js" defer></script>
+</body>
+</html>

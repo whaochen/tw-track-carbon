@@ -1,0 +1,1073 @@
+{
+  "metadata": {
+    "system_id": "TRA",
+    "name_zh": "國營臺灣鐵路",
+    "source_pdf": "https://tip-tr4cdn.cdn.hinet.net/tra-tip-web/static/file/T-table1140508/mile.pdf",
+    "updated_at": "2026-11",
+    "note": "解析自台鐵官方營業里程表 mile.pdf，包含 15 條幹線與支線之車站累計營業里程 (km)。"
+  },
+  "lines": {
+    "縱貫線(山線)": [
+      {
+        "name_zh": "基隆",
+        "mile_km": 0.0
+      },
+      {
+        "name_zh": "三坑",
+        "mile_km": 1.5
+      },
+      {
+        "name_zh": "八堵",
+        "mile_km": 3.9
+      },
+      {
+        "name_zh": "七堵",
+        "mile_km": 6.2
+      },
+      {
+        "name_zh": "百福",
+        "mile_km": 8.9
+      },
+      {
+        "name_zh": "五堵",
+        "mile_km": 11.9
+      },
+      {
+        "name_zh": "汐止",
+        "mile_km": 13.3
+      },
+      {
+        "name_zh": "汐科",
+        "mile_km": 14.6
+      },
+      {
+        "name_zh": "南港",
+        "mile_km": 19.3
+      },
+      {
+        "name_zh": "松山",
+        "mile_km": 22.1
+      },
+      {
+        "name_zh": "臺北",
+        "mile_km": 28.5
+      },
+      {
+        "name_zh": "萬華",
+        "mile_km": 31.3
+      },
+      {
+        "name_zh": "板橋",
+        "mile_km": 35.7
+      },
+      {
+        "name_zh": "浮洲",
+        "mile_km": 38.1
+      },
+      {
+        "name_zh": "樹林",
+        "mile_km": 41.1
+      },
+      {
+        "name_zh": "南樹林",
+        "mile_km": 43.1
+      },
+      {
+        "name_zh": "山佳",
+        "mile_km": 45.0
+      },
+      {
+        "name_zh": "鶯歌",
+        "mile_km": 49.4
+      },
+      {
+        "name_zh": "鳳鳴",
+        "mile_km": 54.4
+      },
+      {
+        "name_zh": "桃園",
+        "mile_km": 57.6
+      },
+      {
+        "name_zh": "內壢",
+        "mile_km": 63.5
+      },
+      {
+        "name_zh": "中壢",
+        "mile_km": 67.5
+      },
+      {
+        "name_zh": "埔心",
+        "mile_km": 73.3
+      },
+      {
+        "name_zh": "楊梅",
+        "mile_km": 77.3
+      },
+      {
+        "name_zh": "富岡",
+        "mile_km": 84.1
+      },
+      {
+        "name_zh": "新富",
+        "mile_km": 85.8
+      },
+      {
+        "name_zh": "北湖",
+        "mile_km": 87.3
+      },
+      {
+        "name_zh": "湖口",
+        "mile_km": 89.8
+      },
+      {
+        "name_zh": "新豐",
+        "mile_km": 96.0
+      },
+      {
+        "name_zh": "竹北",
+        "mile_km": 100.8
+      },
+      {
+        "name_zh": "北新竹",
+        "mile_km": 105.2
+      },
+      {
+        "name_zh": "新竹",
+        "mile_km": 106.6
+      },
+      {
+        "name_zh": "三姓橋",
+        "mile_km": 111.4
+      },
+      {
+        "name_zh": "香山",
+        "mile_km": 114.6
+      },
+      {
+        "name_zh": "崎頂",
+        "mile_km": 120.8
+      },
+      {
+        "name_zh": "竹南",
+        "mile_km": 125.3
+      },
+      {
+        "name_zh": "造橋",
+        "mile_km": 130.7
+      },
+      {
+        "name_zh": "豐富",
+        "mile_km": 136.6
+      },
+      {
+        "name_zh": "苗栗",
+        "mile_km": 140.6
+      },
+      {
+        "name_zh": "南勢",
+        "mile_km": 147.2
+      },
+      {
+        "name_zh": "銅鑼",
+        "mile_km": 151.4
+      },
+      {
+        "name_zh": "三義",
+        "mile_km": 158.8
+      },
+      {
+        "name_zh": "泰安",
+        "mile_km": 169.7
+      },
+      {
+        "name_zh": "后里",
+        "mile_km": 172.3
+      },
+      {
+        "name_zh": "豐原",
+        "mile_km": 179.0
+      },
+      {
+        "name_zh": "栗林",
+        "mile_km": 181.6
+      },
+      {
+        "name_zh": "潭子",
+        "mile_km": 184.1
+      },
+      {
+        "name_zh": "頭家厝",
+        "mile_km": 186.0
+      },
+      {
+        "name_zh": "松竹",
+        "mile_km": 187.7
+      },
+      {
+        "name_zh": "太原",
+        "mile_km": 189.5
+      },
+      {
+        "name_zh": "精武",
+        "mile_km": 191.2
+      },
+      {
+        "name_zh": "臺中",
+        "mile_km": 193.1
+      },
+      {
+        "name_zh": "五權",
+        "mile_km": 195.3
+      },
+      {
+        "name_zh": "大慶",
+        "mile_km": 197.4
+      },
+      {
+        "name_zh": "烏日",
+        "mile_km": 200.5
+      },
+      {
+        "name_zh": "新烏日",
+        "mile_km": 201.4
+      },
+      {
+        "name_zh": "成功",
+        "mile_km": 203.8
+      },
+      {
+        "name_zh": "彰化",
+        "mile_km": 210.9
+      },
+      {
+        "name_zh": "花壇",
+        "mile_km": 217.5
+      },
+      {
+        "name_zh": "大村",
+        "mile_km": 222.1
+      },
+      {
+        "name_zh": "員林",
+        "mile_km": 225.6
+      },
+      {
+        "name_zh": "永靖",
+        "mile_km": 229.1
+      },
+      {
+        "name_zh": "社頭",
+        "mile_km": 232.8
+      },
+      {
+        "name_zh": "田中",
+        "mile_km": 237.1
+      },
+      {
+        "name_zh": "二水",
+        "mile_km": 242.9
+      },
+      {
+        "name_zh": "林內",
+        "mile_km": 251.0
+      },
+      {
+        "name_zh": "石榴",
+        "mile_km": 255.8
+      },
+      {
+        "name_zh": "斗六",
+        "mile_km": 260.6
+      },
+      {
+        "name_zh": "斗南",
+        "mile_km": 268.2
+      },
+      {
+        "name_zh": "石龜",
+        "mile_km": 272.1
+      },
+      {
+        "name_zh": "大林",
+        "mile_km": 276.7
+      },
+      {
+        "name_zh": "民雄",
+        "mile_km": 282.5
+      },
+      {
+        "name_zh": "嘉北",
+        "mile_km": 289.2
+      },
+      {
+        "name_zh": "嘉義",
+        "mile_km": 291.8
+      },
+      {
+        "name_zh": "水上",
+        "mile_km": 298.4
+      },
+      {
+        "name_zh": "南靖",
+        "mile_km": 301.0
+      },
+      {
+        "name_zh": "後壁",
+        "mile_km": 307.0
+      },
+      {
+        "name_zh": "新營",
+        "mile_km": 314.7
+      },
+      {
+        "name_zh": "柳營",
+        "mile_km": 318.0
+      },
+      {
+        "name_zh": "林鳳營",
+        "mile_km": 321.9
+      },
+      {
+        "name_zh": "隆田",
+        "mile_km": 327.4
+      },
+      {
+        "name_zh": "拔林",
+        "mile_km": 329.6
+      },
+      {
+        "name_zh": "善化",
+        "mile_km": 334.2
+      },
+      {
+        "name_zh": "南科",
+        "mile_km": 337.1
+      },
+      {
+        "name_zh": "新市",
+        "mile_km": 341.8
+      },
+      {
+        "name_zh": "永康",
+        "mile_km": 346.8
+      },
+      {
+        "name_zh": "大橋",
+        "mile_km": 350.5
+      },
+      {
+        "name_zh": "臺南",
+        "mile_km": 353.2
+      },
+      {
+        "name_zh": "保安",
+        "mile_km": 360.8
+      },
+      {
+        "name_zh": "仁德",
+        "mile_km": 362.2
+      },
+      {
+        "name_zh": "中洲",
+        "mile_km": 364.7
+      },
+      {
+        "name_zh": "大湖",
+        "mile_km": 367.6
+      },
+      {
+        "name_zh": "路竹",
+        "mile_km": 370.6
+      },
+      {
+        "name_zh": "岡山",
+        "mile_km": 378.4
+      },
+      {
+        "name_zh": "橋頭",
+        "mile_km": 382.0
+      },
+      {
+        "name_zh": "楠梓",
+        "mile_km": 386.2
+      },
+      {
+        "name_zh": "新左營",
+        "mile_km": 391.3
+      },
+      {
+        "name_zh": "左營",
+        "mile_km": 393.3
+      },
+      {
+        "name_zh": "內惟",
+        "mile_km": 394.4
+      },
+      {
+        "name_zh": "美術館",
+        "mile_km": 396.1
+      },
+      {
+        "name_zh": "鼓山",
+        "mile_km": 397.3
+      },
+      {
+        "name_zh": "三塊厝",
+        "mile_km": 399.0
+      },
+      {
+        "name_zh": "高雄",
+        "mile_km": 399.9
+      }
+    ],
+    "縱貫線(海線)": [
+      {
+        "name_zh": "竹南",
+        "mile_km": 0.0
+      },
+      {
+        "name_zh": "談文",
+        "mile_km": 4.5
+      },
+      {
+        "name_zh": "大山",
+        "mile_km": 11.3
+      },
+      {
+        "name_zh": "後龍",
+        "mile_km": 15.0
+      },
+      {
+        "name_zh": "龍港",
+        "mile_km": 18.6
+      },
+      {
+        "name_zh": "白沙屯",
+        "mile_km": 26.7
+      },
+      {
+        "name_zh": "新埔",
+        "mile_km": 29.8
+      },
+      {
+        "name_zh": "通霄",
+        "mile_km": 35.6
+      },
+      {
+        "name_zh": "苑裡",
+        "mile_km": 41.7
+      },
+      {
+        "name_zh": "日南",
+        "mile_km": 49.4
+      },
+      {
+        "name_zh": "大甲",
+        "mile_km": 54.1
+      },
+      {
+        "name_zh": "臺中港",
+        "mile_km": 59.3
+      },
+      {
+        "name_zh": "清水",
+        "mile_km": 65.3
+      },
+      {
+        "name_zh": "沙鹿",
+        "mile_km": 68.5
+      },
+      {
+        "name_zh": "龍井",
+        "mile_km": 73.1
+      },
+      {
+        "name_zh": "大肚",
+        "mile_km": 78.1
+      },
+      {
+        "name_zh": "追分",
+        "mile_km": 83.1
+      },
+      {
+        "name_zh": "彰化",
+        "mile_km": 90.3
+      }
+    ],
+    "宜蘭線": [
+      {
+        "name_zh": "八堵",
+        "mile_km": 0.0
+      },
+      {
+        "name_zh": "暖暖",
+        "mile_km": 1.6
+      },
+      {
+        "name_zh": "四腳亭",
+        "mile_km": 3.9
+      },
+      {
+        "name_zh": "瑞芳",
+        "mile_km": 8.9
+      },
+      {
+        "name_zh": "猴硐",
+        "mile_km": 13.5
+      },
+      {
+        "name_zh": "三貂嶺",
+        "mile_km": 16.0
+      },
+      {
+        "name_zh": "牡丹",
+        "mile_km": 19.5
+      },
+      {
+        "name_zh": "雙溪",
+        "mile_km": 22.9
+      },
+      {
+        "name_zh": "貢寮",
+        "mile_km": 28.2
+      },
+      {
+        "name_zh": "福隆",
+        "mile_km": 32.0
+      },
+      {
+        "name_zh": "石城",
+        "mile_km": 37.4
+      },
+      {
+        "name_zh": "大里",
+        "mile_km": 40.1
+      },
+      {
+        "name_zh": "大溪",
+        "mile_km": 44.8
+      },
+      {
+        "name_zh": "龜山",
+        "mile_km": 49.4
+      },
+      {
+        "name_zh": "外澳",
+        "mile_km": 52.9
+      },
+      {
+        "name_zh": "頭城",
+        "mile_km": 56.6
+      },
+      {
+        "name_zh": "頂埔",
+        "mile_km": 58.8
+      },
+      {
+        "name_zh": "礁溪",
+        "mile_km": 62.9
+      },
+      {
+        "name_zh": "四城",
+        "mile_km": 67.6
+      },
+      {
+        "name_zh": "宜蘭",
+        "mile_km": 71.3
+      },
+      {
+        "name_zh": "二結",
+        "mile_km": 77.1
+      },
+      {
+        "name_zh": "中里",
+        "mile_km": 78.3
+      },
+      {
+        "name_zh": "羅東",
+        "mile_km": 80.1
+      },
+      {
+        "name_zh": "冬山",
+        "mile_km": 85.1
+      },
+      {
+        "name_zh": "新馬",
+        "mile_km": 89.3
+      },
+      {
+        "name_zh": "蘇澳新",
+        "mile_km": 90.2
+      }
+    ],
+    "北迴線": [
+      {
+        "name_zh": "蘇澳新",
+        "mile_km": 0.0
+      },
+      {
+        "name_zh": "永樂",
+        "mile_km": 5.2
+      },
+      {
+        "name_zh": "東澳",
+        "mile_km": 10.9
+      },
+      {
+        "name_zh": "南澳",
+        "mile_km": 18.9
+      },
+      {
+        "name_zh": "武塔",
+        "mile_km": 22.6
+      },
+      {
+        "name_zh": "漢本",
+        "mile_km": 35.5
+      },
+      {
+        "name_zh": "和平",
+        "mile_km": 39.9
+      },
+      {
+        "name_zh": "和仁",
+        "mile_km": 47.8
+      },
+      {
+        "name_zh": "崇德",
+        "mile_km": 57.8
+      },
+      {
+        "name_zh": "新城",
+        "mile_km": 63.1
+      },
+      {
+        "name_zh": "景美",
+        "mile_km": 68.4
+      },
+      {
+        "name_zh": "北埔",
+        "mile_km": 74.9
+      },
+      {
+        "name_zh": "花蓮",
+        "mile_km": 79.5
+      }
+    ],
+    "臺東線": [
+      {
+        "name_zh": "花蓮",
+        "mile_km": 0.0
+      },
+      {
+        "name_zh": "吉安",
+        "mile_km": 3.5
+      },
+      {
+        "name_zh": "志學",
+        "mile_km": 12.3
+      },
+      {
+        "name_zh": "平和",
+        "mile_km": 15.3
+      },
+      {
+        "name_zh": "壽豐",
+        "mile_km": 17.1
+      },
+      {
+        "name_zh": "豐田",
+        "mile_km": 19.9
+      },
+      {
+        "name_zh": "林榮新光",
+        "mile_km": 26.1
+      },
+      {
+        "name_zh": "南平",
+        "mile_km": 28.3
+      },
+      {
+        "name_zh": "鳳林",
+        "mile_km": 32.5
+      },
+      {
+        "name_zh": "萬榮",
+        "mile_km": 37.4
+      },
+      {
+        "name_zh": "光復",
+        "mile_km": 43.0
+      },
+      {
+        "name_zh": "大富",
+        "mile_km": 50.5
+      },
+      {
+        "name_zh": "富源",
+        "mile_km": 53.7
+      },
+      {
+        "name_zh": "瑞穗",
+        "mile_km": 62.8
+      },
+      {
+        "name_zh": "三民",
+        "mile_km": 72.2
+      },
+      {
+        "name_zh": "玉里",
+        "mile_km": 83.0
+      },
+      {
+        "name_zh": "東里",
+        "mile_km": 89.8
+      },
+      {
+        "name_zh": "東竹",
+        "mile_km": 95.8
+      },
+      {
+        "name_zh": "富里",
+        "mile_km": 101.9
+      },
+      {
+        "name_zh": "池上",
+        "mile_km": 108.7
+      },
+      {
+        "name_zh": "海端",
+        "mile_km": 114.4
+      },
+      {
+        "name_zh": "關山",
+        "mile_km": 120.9
+      },
+      {
+        "name_zh": "瑞和",
+        "mile_km": 128.4
+      },
+      {
+        "name_zh": "瑞源",
+        "mile_km": 131.1
+      },
+      {
+        "name_zh": "鹿野",
+        "mile_km": 136.6
+      },
+      {
+        "name_zh": "山里",
+        "mile_km": 142.7
+      },
+      {
+        "name_zh": "臺東",
+        "mile_km": 150.9
+      }
+    ],
+    "蘇澳線": [
+      {
+        "name_zh": "蘇澳新",
+        "mile_km": 0.0
+      },
+      {
+        "name_zh": "蘇澳",
+        "mile_km": 3.3
+      }
+    ],
+    "屏東線": [
+      {
+        "name_zh": "高雄",
+        "mile_km": 0.0
+      },
+      {
+        "name_zh": "民族",
+        "mile_km": 1.3
+      },
+      {
+        "name_zh": "科工館",
+        "mile_km": 2.4
+      },
+      {
+        "name_zh": "正義",
+        "mile_km": 4.2
+      },
+      {
+        "name_zh": "鳳山",
+        "mile_km": 5.5
+      },
+      {
+        "name_zh": "後庄",
+        "mile_km": 9.4
+      },
+      {
+        "name_zh": "九曲堂",
+        "mile_km": 13.6
+      },
+      {
+        "name_zh": "六塊厝",
+        "mile_km": 18.6
+      },
+      {
+        "name_zh": "屏東",
+        "mile_km": 20.9
+      },
+      {
+        "name_zh": "歸來",
+        "mile_km": 23.5
+      },
+      {
+        "name_zh": "麟洛",
+        "mile_km": 25.8
+      },
+      {
+        "name_zh": "西勢",
+        "mile_km": 28.2
+      },
+      {
+        "name_zh": "竹田",
+        "mile_km": 31.9
+      },
+      {
+        "name_zh": "潮州",
+        "mile_km": 35.9
+      },
+      {
+        "name_zh": "崁頂",
+        "mile_km": 40.8
+      },
+      {
+        "name_zh": "南州",
+        "mile_km": 43.2
+      },
+      {
+        "name_zh": "鎮安",
+        "mile_km": 47.0
+      },
+      {
+        "name_zh": "林邊",
+        "mile_km": 50.1
+      },
+      {
+        "name_zh": "佳冬",
+        "mile_km": 54.0
+      },
+      {
+        "name_zh": "東海",
+        "mile_km": 57.1
+      },
+      {
+        "name_zh": "枋寮",
+        "mile_km": 61.2
+      }
+    ],
+    "南迴線": [
+      {
+        "name_zh": "枋寮",
+        "mile_km": 0.0
+      },
+      {
+        "name_zh": "加祿",
+        "mile_km": 5.3
+      },
+      {
+        "name_zh": "內獅",
+        "mile_km": 8.8
+      },
+      {
+        "name_zh": "枋山",
+        "mile_km": 13.6
+      },
+      {
+        "name_zh": "大武",
+        "mile_km": 43.8
+      },
+      {
+        "name_zh": "瀧溪",
+        "mile_km": 55.5
+      },
+      {
+        "name_zh": "金崙",
+        "mile_km": 63.9
+      },
+      {
+        "name_zh": "太麻里",
+        "mile_km": 74.8
+      },
+      {
+        "name_zh": "知本",
+        "mile_km": 86.5
+      },
+      {
+        "name_zh": "康樂",
+        "mile_km": 93.6
+      },
+      {
+        "name_zh": "臺東",
+        "mile_km": 98.1
+      }
+    ],
+    "平溪線": [
+      {
+        "name_zh": "三貂嶺",
+        "mile_km": 0.0
+      },
+      {
+        "name_zh": "大華",
+        "mile_km": 3.6
+      },
+      {
+        "name_zh": "十分",
+        "mile_km": 6.4
+      },
+      {
+        "name_zh": "望古",
+        "mile_km": 8.1
+      },
+      {
+        "name_zh": "嶺腳",
+        "mile_km": 10.2
+      },
+      {
+        "name_zh": "平溪",
+        "mile_km": 11.2
+      },
+      {
+        "name_zh": "菁桐",
+        "mile_km": 12.9
+      }
+    ],
+    "內灣線": [
+      {
+        "name_zh": "新竹",
+        "mile_km": 0.0
+      },
+      {
+        "name_zh": "北新竹",
+        "mile_km": 1.4
+      },
+      {
+        "name_zh": "千甲",
+        "mile_km": 3.6
+      },
+      {
+        "name_zh": "新莊",
+        "mile_km": 6.6
+      },
+      {
+        "name_zh": "竹中",
+        "mile_km": 7.9
+      },
+      {
+        "name_zh": "上員",
+        "mile_km": 10.6
+      },
+      {
+        "name_zh": "榮華",
+        "mile_km": 15.0
+      },
+      {
+        "name_zh": "竹東",
+        "mile_km": 16.6
+      },
+      {
+        "name_zh": "橫山",
+        "mile_km": 20.1
+      },
+      {
+        "name_zh": "九讚頭",
+        "mile_km": 22.1
+      },
+      {
+        "name_zh": "合興",
+        "mile_km": 24.3
+      },
+      {
+        "name_zh": "富貴",
+        "mile_km": 25.7
+      },
+      {
+        "name_zh": "內灣",
+        "mile_km": 27.9
+      }
+    ],
+    "集集線": [
+      {
+        "name_zh": "二水",
+        "mile_km": 0.0
+      },
+      {
+        "name_zh": "源泉",
+        "mile_km": 3.0
+      },
+      {
+        "name_zh": "濁水",
+        "mile_km": 10.8
+      },
+      {
+        "name_zh": "龍泉",
+        "mile_km": 15.7
+      },
+      {
+        "name_zh": "集集",
+        "mile_km": 20.0
+      },
+      {
+        "name_zh": "水里",
+        "mile_km": 27.4
+      },
+      {
+        "name_zh": "車埕",
+        "mile_km": 29.6
+      }
+    ],
+    "成追線": [
+      {
+        "name_zh": "成功",
+        "mile_km": 0.0
+      },
+      {
+        "name_zh": "追分",
+        "mile_km": 2.2
+      }
+    ],
+    "沙崙線": [
+      {
+        "name_zh": "中洲",
+        "mile_km": 0.0
+      },
+      {
+        "name_zh": "長榮大學",
+        "mile_km": 2.6
+      },
+      {
+        "name_zh": "沙崙",
+        "mile_km": 5.7
+      }
+    ],
+    "六家線": [
+      {
+        "name_zh": "竹中",
+        "mile_km": 0.0
+      },
+      {
+        "name_zh": "六家",
+        "mile_km": 3.1
+      }
+    ],
+    "深澳線": [
+      {
+        "name_zh": "瑞芳",
+        "mile_km": 0.0
+      },
+      {
+        "name_zh": "海科館",
+        "mile_km": 4.3
+      },
+      {
+        "name_zh": "八斗子",
+        "mile_km": 4.7
+      }
+    ]
+  }
+}
